@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="CSS/styles_univ.css">
     <!-- Link Icono de la página -->
     <link rel="icon" href="Imagenes/Logo_canvaTransp.ico">
-    
+    <!-- Link de Fontawasome -->
+    <script src="https://kit.fontawesome.com/dde51656e4.js" crossorigin="anonymous"></script>
+    <!-- Link de GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -81,8 +86,12 @@
             </div>
         </section>
 
-        <section>
-            frase
+        <section> <!-- Frase -->
+            <div class="module-border-wrap">
+                <div class="module">
+                    <div id="typedtext"></div> <!-- El texto está en el arcivo JavaScript -->
+                </div>
+            </div>
         </section>
 
         <section class="post-list"> <!-- Noticias -->
@@ -142,8 +151,32 @@
         <script src="main.js"></script>
     </main>
 
-    <footer>
-        Footer
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#"><img src="Imagenes/Logo_canvaT.png" alt="Logo de universidad"></a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nesciunt.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Uiversidad Nuevo Horizonte</b> - Todos los derechos reservados.</small>
+        </div>
     </footer>
 </body>
 </html>
