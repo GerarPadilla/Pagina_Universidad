@@ -202,12 +202,12 @@ nav .submenu .hijos li a {
         position: absolute;
         right: 0.5em;
         top: 0.5em;
-        z-index: 9999;
+        z-index: 9000;
     }
 
     #menu:hover {
-        color: var(--text-color-3);
-        background: var(--color-1);
+        color: aqua;
+        background: none;
     }
 
     #menu-cerrar {
@@ -239,13 +239,52 @@ nav .submenu .hijos li a {
     .grid-container .interior nav ul li {
         display: block;
         text-align: right;
-        padding: 5px;
+        padding: 30px;
+    }
+
+    .grid-container .interior nav ul .submenu a {
+        font-size: 20px;
+    }
+
+    .grid-container .interior nav ul li.submenu {
+        display: block;
+        padding: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .grid-container .interior nav ul a {
-        color: #e11acd;
+        color: #fff;
     }
 
+    .grid-container .interior nav .submenu .hijos { /*Para desaparecer el submenu cuando no se pasa el puntero por encima*/
+        display: none;
+    }
+
+    .grid-container .interior nav ul .submenu .hijos li a{
+        /*Para desaparecer el submenu cuando no se pasa el puntero por encima*/
+        font-size: 30px;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .interior nav ul li a:hover {
+        color: #00c9bd;
+        transform: scale(1.1);
+        z-index: 9999;
+    }
+    
+    .grid-container .interior nav ul li:hover .hijos {
+        display: block;
+        padding: 0px;
+        z-index: 9999;
+        bottom: -120px;
+        right: 50px;
+        width: 100%;
+        transform: scale(0.4)
+
+
+    }
 }
 
 /* ######## FIN NAV ######## */
