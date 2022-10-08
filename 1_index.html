@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,22 +19,31 @@
 </head>
 
 <body>
-    <header>
-        <div class="div-logo">
-            <h1><a href="#"><img id="logo" src="Imagenes/Logo_canvaT.png" alt=""></a></h1>
-        </div>
+    <div class="grid-container">
+        <header>
+            <div class="div-logo">
+                <h1><a href="#"><img id="logo" src="Imagenes/Logo_canvaT.png" alt=""></a></h1>
+            </div>
 
-        <div class="div-portada">
-            <img id="portada" src="Imagenes/portada.jpg" alt="">
-        </div>
-    </header>
+            <div class="div-portada">
+                <img id="portada" src="Imagenes/portada.jpg" alt="">
+            </div>
+        </header>
 
         <div class="interior">
-            <nav class="navegacion">
+            <!--Barra de navegación-->
+
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" id="menu">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+
+            <nav>
                 <ul>
                     <li class="submenu"><a href="#" target="blank">Institucional</a>
                         <ul class="hijos">
-                            <li><a href="">Misión, Visión y Valores</a></li>
+                            <li><a href="">Misión, Visión, Valores</a></li>
                             <li><a href="">Ubicación</a></li>
                             <li><a href="">Autoridades</a></li>
                             <li><a href="">Item4</a></li>
@@ -67,26 +77,26 @@
                             <li><a href="">Item2</a></li>
                         </ul>
                     </li>
-                </ul>
-                <ul>
                     <li><a href="#" target="blank">Contacto</a></li>
                 </ul>
             </nav>
         </div>
+    </div>
 
-    <main> 
+    <main>
         <section>
             <div class="slider-frame">
                 <ul>
-                    <li><a href="#"><img src="Imagenes/carrousel1.jpg" alt="" width="600"></a></li>
-                    <li><a href="#"><img src="Imagenes/carrousel2.jpg" alt="" width="600"></a></li>
-                    <li><a href="#"><img src="Imagenes/carrousel3.jpg" alt="" width="600"></a></li>
-                    <li><a href="#"><img src="Imagenes/carrousel4.jpg" alt="" width="600"></a></li>
+                    <li><a href="#"><img src="Imagenes/carrousel1H.jpg" alt="Imagen Carrousel 1"></a></li>
+                    <li><a href="#"><img src="Imagenes/carrousel2H.jpg" alt="Imagen Carrousel 2"></a></li>
+                    <li><a href="#"><img src="Imagenes/carrousel3H.jpg" alt="Imagen Carrousel 3"></a></li>
+                    <li><a href="#"><img src="Imagenes/carrousel4H.jpg" alt="Imagen Carrousel 4"></a></li>
                 </ul>
             </div>
         </section>
 
-        <section> <!-- Frase -->
+        <section>
+            <!-- Frase -->
             <div class="module-border-wrap">
                 <div class="module">
                     <div id="typedtext"></div> <!-- El texto está en el arcivo JavaScript -->
@@ -94,7 +104,8 @@
             </div>
         </section>
 
-        <section class="post-list"> <!-- Noticias -->
+        <section class="post-list">
+            <!-- Noticias -->
             <div class="content">
                 <article class="post">
                     <div class="post-header">
@@ -103,7 +114,9 @@
                     <div class="post-body">
                         <span>6 Octubre, 2022 | Institucional</span>
                         <h2>Nuevo Laboratorio de Investigación</h2>
-                        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam eveniet fugit esse, distinctio ducimus illum cupiditate ratione assumenda mollitia doloribus porro illo ipsa eos.</p>
+                        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam
+                            eveniet fugit esse, distinctio ducimus illum cupiditate ratione assumenda mollitia doloribus
+                            porro illo ipsa eos.</p>
                         <a href="#" class="post-link">Leer Más...</a>
                     </div>
                 </article>
@@ -115,7 +128,9 @@
                     <div class="post-body">
                         <span>15 Spetiembre, 2022 | Administrativo</span>
                         <h2>Reunión acerca de nuevos protocolos</h2>
-                        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, voluptatibus rerum? Reprehenderit culpa totam earum itaque veritatis magnam. Voluptates, quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.?</p>
+                        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                            voluptatibus rerum? Reprehenderit culpa totam earum itaque veritatis magnam. Voluptates,
+                            quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.?</p>
                         <a href="#" class="post-link">Leer Más...</a>
                     </div>
                 </article>
@@ -127,7 +142,9 @@
                     <div class="post-body">
                         <span>29 Agosto, 2022 | Cursos y Talleres</span>
                         <h2>Nuevo Curso de Programación Avanzada</h2>
-                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat iusto quia expedita dolor doloribus omnis quae magni blanditiis placeat? Fuga, consectetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, modi?</p>
+                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat iusto
+                            quia expedita dolor doloribus omnis quae magni blanditiis placeat? Fuga, consectetur! Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, modi?</p>
                         <a href="#" class="post-link">Leer Más...</a>
                     </div>
                 </article>
@@ -139,9 +156,11 @@
                     <div class="post-body">
                         <span>4 Agosto, 2022 | Cultura e Idiomas</span>
                         <h2>Taller de Lenguas Extranjeras</h2>
-                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat iusto quia expedita
-                            dolor doloribus omnis quae magni blanditiis placeat? Fuga, consectetur! Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Aspernatur, modi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ullam consectetur?</p>
+                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat iusto
+                            quia expedita
+                            dolor doloribus omnis quae magni blanditiis placeat? Fuga, consectetur! Lorem ipsum dolor
+                            sit amet,
+                            Aspernatur.</p>
                         <a href="#" class="post-link">Leer Más...</a>
                     </div>
                 </article>
@@ -179,4 +198,5 @@
         </div>
     </footer>
 </body>
+
 </html>

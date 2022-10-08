@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function (e) {  /* Para que cargue
 var aText = new Array(
     '"La verdadera ignoracia no es la ausencia de conocimiento, sino el hecho de rehusarse a adquirirlo."',
     '',
-    '"Karl Popper"'
+    'Karl Popper'
 );
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
