@@ -53,10 +53,11 @@ header {
 /* ######## NAV ######## */
 .grid-container .interior {
     width: 100%;
-    padding: 0px 10px 0px;
+    padding: 0;
     margin: 0px;
     background-color: #0b132b;
     display: block;
+    margin: 0;
 }
 
 .grid-container .interior nav {
@@ -67,6 +68,15 @@ header {
     min-height: 70px;
     z-index: 1000;
     background-color: #0b132b;
+}
+
+.grid-container .interior nav ul .submenu .hijos li a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav {
+    height: 100%;
 }
 
 nav ul {
@@ -146,6 +156,21 @@ nav .submenu .hijos li a {
         display: inline;
     }
 
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        transform: scale(0.8);
+        text-align: center;
+    }
+    
+    nav ul li a:hover {
+        transform: scale(0.85);
+    }
+
+
     div.interior nav {
         width: 100%;
         display: inline;
@@ -168,19 +193,24 @@ nav .submenu .hijos li a {
     .grid-container .interior {
         min-height: 70px;
     }
-}
-
-@media only screen and (max-width: 680px) {
-    nav ul li a {
-        color: #67d41e;
-        font-size: 1px;
-        padding: 12px 5px;
+    .grid-container .interior nav ul .submenu a{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1mm;
     }
 
+}
+
+@media only screen and (max-width: 770px) {
+    
     header,
     .interior {
         display: flex;
         place-content: space-between;
+    }
+
+    .grid-container .interior nav ul .submenu{
+        bottom: 60px;
     }
 
     #menu-check:not(:checked)~nav {
@@ -270,20 +300,55 @@ nav .submenu .hijos li a {
 
     .interior nav ul li a:hover {
         color: #00c9bd;
-        transform: scale(1.1);
         z-index: 9999;
+    }
+
+    nav ul li a {
+        transform: scale(1);
+        text-align: center;
+    }
+    
+    nav ul li a:hover {
+        transform: scale(1.05);
     }
     
     .grid-container .interior nav ul li:hover .hijos {
         display: block;
         padding: 0px;
         z-index: 9999;
-        bottom: -120px;
+        bottom: -80px;
         right: 50px;
         width: 100%;
         transform: scale(0.4)
+    }
+    .grid-container .interior nav ul .submenu .hijos li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
 
+@media only screen and (max-width: 533px) {
+    .grid-container .interior nav ul li:hover .hijos {
+        bottom: -57px;
+    }
 
+    .grid-container .interior nav ul .submenu a {
+        font-size: 1px;
+    }
+    .grid-container .interior nav ul .submenu .hijos li a {
+        font-size: 17px;
+                
+    }
+    .grid-container .interior nav ul .submenu .hijos li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .module-border-wrap .module #typedtext{
+        padding: 0;
+        padding: 0;
+        margin: 0;
+        margin: 0;
     }
 }
 
@@ -397,6 +462,12 @@ nav .submenu .hijos li a {
     justify-content: center;
     padding: 30px 15px;
     background-color: #fff;
+}
+
+@media only screen and (min-height: 900px) {
+    .post-list {
+    min-height: 0;
+    }
 }
 
 .content {
