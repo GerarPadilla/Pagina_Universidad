@@ -275,12 +275,13 @@ nav .submenu .hijos li a {
     .grid-container .interior nav ul .submenu a {
         font-size: 20px;
     }
-
-    .grid-container .interior nav ul li.submenu {
-        display: block;
-        padding: 0px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    @media only screen and (min-height: 370px) {
+        .grid-container .interior nav ul li.submenu {
+            display: block;
+            padding: 0px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
     }
 
     .grid-container .interior nav ul a {
@@ -325,6 +326,7 @@ nav .submenu .hijos li a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
 }
 
 @media only screen and (max-width: 533px) {
@@ -352,6 +354,20 @@ nav .submenu .hijos li a {
     }
 }
 
+@media only screen and (max-height: 370px) {
+    @media only screen and (max-width: 480px) {
+        .grid-container .interior nav ul li.submenu {
+            display: block;
+            padding: 0px;
+            margin-top: 9.8vh;
+            margin-bottom: 0px;
+        }
+    }
+
+        
+            
+        
+}
 /* ######## FIN NAV ######## */
 
 /* ######## CARROUSEL ######## */
@@ -836,7 +852,49 @@ nav .submenu .hijos li a {
         height: 50px;
     }
 }
-
 .fa-chevron-up:before{
     display: block;
+}
+@media only screen and (max-height: 370px) {
+    @media only screen and (max-width: 480px) {
+        .go-top-button {
+                z-index: 9000;
+            }
+        .go-top-container{
+            bottom: -30px;
+            z-index: 9000;
+        }
+    }
+
+}
+@media only screen and (max-height: 480px) {
+    @media only screen and (max-width: 320px) {
+        
+        .go-top-button {
+            z-index: 9000;
+        }  
+        .show .go-top-button{ /*Tamaño del boton*/
+            width: 5.5vw;
+            height: 5.5vw;
+        }
+
+        .go-top-container {
+            bottom: -28px; /*Posición del botón*/
+            z-index: 9000;
+        }
+    }
+    @keyframes popup{
+        0%{
+            width: 0px;
+            height: 0px;
+        }
+        50%{
+            width: 18px;
+            height: 18px;
+        }
+        100%{
+            width: 15px;
+            height: 15px;
+        }
+}
 }
