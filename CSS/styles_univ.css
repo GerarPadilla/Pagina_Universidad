@@ -196,7 +196,7 @@ nav .submenu .hijos li a {
     .grid-container .interior nav ul .submenu a{
         padding-left: 15px;
         padding-right: 15px;
-        font-size: 1mm;
+        font-size: 1px;
     }
 
 }
@@ -273,9 +273,9 @@ nav .submenu .hijos li a {
     }
 
     .grid-container .interior nav ul .submenu a {
-        font-size: 20px;
+        font-size: 1vw;
     }
-    @media only screen and (min-height: 370px) {
+    @media only screen and (min-height: 335px) {
         .grid-container .interior nav ul li.submenu {
             display: block;
             padding: 0px;
@@ -294,7 +294,7 @@ nav .submenu .hijos li a {
 
     .grid-container .interior nav ul .submenu .hijos li a{
         /*Para desaparecer el submenu cuando no se pasa el puntero por encima*/
-        font-size: 30px;
+        font-size: 24px;
         padding: 0px;
         margin: 0;
     }
@@ -354,19 +354,24 @@ nav .submenu .hijos li a {
     }
 }
 
-@media only screen and (max-height: 370px) {
-    @media only screen and (max-width: 480px) {
+@media only screen and (max-height: 435px) {
+    @media only screen and (max-width: 770px) {
         .grid-container .interior nav ul li.submenu {
             display: block;
             padding: 0px;
             margin-top: 9.8vh;
             margin-bottom: 0px;
         }
+        .grid-container .interior nav ul li.submenu .hijos, .grid-container .interior nav ul li.submenu .hijos li {
+            top: -40px;
+        }
+        .grid-container .interior nav ul li.submenu .hijos li{
+            top: 0px;
+        }
+        .grid-container .interior nav ul li.submenu .hijos li a{
+            font-size: max(4vh, 15px);
+        }
     }
-
-        
-            
-        
 }
 /* ######## FIN NAV ######## */
 
@@ -881,8 +886,8 @@ nav .submenu .hijos li a {
 @media only screen and (max-height: 370px) {
     @media only screen and (max-width: 480px) {
         .go-top-button {
-                z-index: 9000;
-            }
+            z-index: 9000;
+        }
         .go-top-container{
             bottom: -30px;
             z-index: 9000;
