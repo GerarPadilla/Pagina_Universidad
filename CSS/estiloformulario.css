@@ -1,5 +1,5 @@
 body {
-     background-image: url(/Pagina_Universidad-master/Imagenes/estudiante.jpg);
+     background-image: url("../Imagenes/grupo_estudiantes.jpg");
      background-size: 100vw 100vh;
      background-attachment: fixed;
      margin: 0;

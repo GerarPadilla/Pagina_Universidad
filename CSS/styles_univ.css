@@ -194,8 +194,8 @@ nav .submenu .hijos li a {
         min-height: 70px;
     }
     .grid-container .interior nav ul .submenu a{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 14px;
+        padding-right: 14px;
         font-size: 1px;
     }
 
@@ -925,4 +925,37 @@ nav .submenu .hijos li a {
             height: 15px;
         }
     }
+}
+
+/* Página "Misión, Visión y Valores */
+.MVV img{
+    display: block;
+    height: auto;
+    width: max(60%, 250px);
+    margin: auto;
+    text-align: center;
+}
+.MVV h1{
+    color: #fff;
+    text-align: center;
+    font-size: 5vw;
+}
+.m_v_v h2 {
+    color: #fff;
+    text-align: left;
+    padding: 1vw 10px;
+    font-size: max(4vw, 20px);
+}
+main .m_v_v p {
+    color: #fff;
+    padding: 1vw 10px;
+    font-size: 2vw;
+}
+.m_v_v ul {
+    color: #fff;
+    padding: 1vw 10px;
+}
+.m_v_v ul li{
+    font-size: 2vw;
+    margin-left: max(20px, 3.5vw);
 }

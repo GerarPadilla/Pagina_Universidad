@@ -1,5 +1,5 @@
 /* Noticias */
-/* Para que los liks de "Leer Más" estén siempre abajo */
+/* Para que los links de "Leer Más" estén siempre abajo */
 document.addEventListener("DOMContentLoaded", function (e) {  /* Para que cargue el contenido de la página */
     
     const parrafos = document.querySelectorAll(".descripcion");
