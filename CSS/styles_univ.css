@@ -989,6 +989,9 @@ main .m_v_v p {
 .edificio .text p a{
     color: #fff;
 }
+.edificio .text p a:hover{
+    color: aqua;
+}
 .edificio .mapa .responsive_iframe{
     width: 50vw;
     height: 45vw;
