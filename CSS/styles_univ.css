@@ -68,6 +68,7 @@ header {
     min-height: 70px;
     z-index: 1000;
     background-color: #0b132b;
+    border-bottom: 2px solid #0d2033;
 }
 
 .grid-container .interior nav ul .submenu .hijos li a {
@@ -644,6 +645,7 @@ nav .submenu .hijos li a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
+    border-top: 2px solid #0d2033;
 }
 
 .pie-pagina .grupo-1 .box figure {
@@ -931,14 +933,15 @@ nav .submenu .hijos li a {
 .MVV img{
     display: block;
     height: auto;
-    width: max(60%, 250px);
+    width: max(70%, 250px);
     margin: auto;
     text-align: center;
 }
 .MVV h1{
     color: #fff;
     text-align: center;
-    font-size: 5vw;
+    font-size: max(5vw,20px);
+    font-weight: normal;
 }
 .m_v_v h2 {
     color: #fff;
@@ -958,4 +961,43 @@ main .m_v_v p {
 .m_v_v ul li{
     font-size: 2vw;
     margin-left: max(20px, 3.5vw);
+}
+
+/* Página Ubicación */
+
+#tit_edif{
+    padding-left: 20px;
+    color: #fff
+}
+.edificio{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+.edificio .text, .edificio .mapa{
+    padding: 10px;
+    color: #fff
+}
+.edificio .text p{
+    padding-bottom: 10px;
+    font-size: max(2vw, 20px);
+    text-align: left;
+}
+.edificio .text p a{
+    color: #fff;
+}
+.edificio .mapa .responsive_iframe{
+    width: 50vw;
+    height: 45vw;
+    min-width: 240px;
+    min-height: 220px;
+}
+@media screen and (max-width:460px){
+    .edificio .mapa .responsive_iframe {
+        min-width: none;
+        min-height: none;
+        }
 }
