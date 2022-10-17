@@ -100,7 +100,7 @@ nav ul li a {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: bold;
     padding: 12px 20px;
     transition: .3s linear;
@@ -178,7 +178,7 @@ nav .submenu .hijos li a {
     }
 
     nav ul li a {
-        font-size: 1px;
+        /*font-size: 35px;*/
         padding: 12px 5px;
     }
 
@@ -197,7 +197,7 @@ nav .submenu .hijos li a {
     .grid-container .interior nav ul .submenu a{
         padding-left: 14px;
         padding-right: 14px;
-        font-size: 1px;
+        font-size: 1.5vw;
     }
 
 }
@@ -274,7 +274,7 @@ nav .submenu .hijos li a {
     }
 
     .grid-container .interior nav ul .submenu a {
-        font-size: 1vw;
+        font-size: 3vw;
     }
     @media only screen and (min-height: 335px) {
         .grid-container .interior nav ul li.submenu {
@@ -336,10 +336,10 @@ nav .submenu .hijos li a {
     }
 
     .grid-container .interior nav ul .submenu a {
-        font-size: 1px;
+        font-size: 3vw;
     }
     .grid-container .interior nav ul .submenu .hijos li a {
-        font-size: 17px;
+        font-size: max(4vw, 15px);
                 
     }
     .grid-container .interior nav ul .submenu .hijos li {
