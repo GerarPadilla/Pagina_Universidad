@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Probando consumir una API</h1>
+
+    <div class="container">
+        <div class="quote-box">
+            <p id="quote">Quote is here...</p>
+            <small id="author">Author</small>
+        </div>
+        <button id="btn">New Quote</button> 
+    </div>
+
+
+    <script>
+        const quote = document.querySelector("#quote");
+        const author = document.querySelector("#author");
+        const btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", getQuote);
+
+        function getQuote() {
+            fetch("http://api.quotable.io/random")
+            .then(res => res.json())
+            .then(data => {
+                quote.innerHTML = `"${data.content}"`;
+                author.innerHTML = `- ${data.author}`;
+            })
+        }
+        
+    </script>
+</body>
+</html>

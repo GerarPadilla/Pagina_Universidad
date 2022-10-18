@@ -461,7 +461,7 @@ nav .submenu .hijos li a {
 .module {
     background: #222;
     color: white;
-    padding: 2rem;
+    padding: 15px;
 }
 
 /*Para efecto de tipado*/
@@ -472,6 +472,33 @@ nav .submenu .hijos li a {
     letter-spacing: 6px;
     font-weight: bold;
 }
+
+/* Generador de frases (API) */
+.module-border-wrap .module #quote, .module-border-wrap .module #author{
+    font-family: 'Special Elite', cursive;
+    font-size: max(2vw,12px);
+    margin: 10px 10px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+.module-border-wrap .module .boton{
+    text-align: center;
+}
+
+.module-border-wrap .module #btn{
+    padding: 5px;
+    font-size: max(1vw,5px);
+    color: #fff;
+    background-color: rgb(52, 52, 52);
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 550;
+    cursor: pointer;
+}
+.module-border-wrap .module #btn:hover{
+    box-shadow: 1px 0px 10px rgba(163,163,163, 1);
+}
+
 
 /* ######## FIN FRASE ######## */
 
@@ -708,6 +735,9 @@ nav .submenu .hijos li a {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure img {
+        width: 150px;
     }
 }
 
