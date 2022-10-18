@@ -1,4 +1,3 @@
-/* Fuentes de Google*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Qwitcher+Grypen&display=swap');
 
 * {
@@ -9,9 +8,188 @@
 }
 
 body {
-    /*font-family: "Open Sans", sans-serif;*/
     background-color: #0b132b;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
 }
+form {
+    width: 80%;
+    margin: auto;
+    background: rgba(209, 191, 191, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;     
+}
+.form_container{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 860px) {
+    .form_container{
+        margin: 30px;
+    }
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: max(25px, 3vw);
+    margin-bottom: 20px;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea { 
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+    color: #fff;
+    font-size: max(2vw, 20px);
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 50%;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+ 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+
+@media (max-width:480px) {
+    form{
+         width: 100%;
+    }
+}
+
+/**************************************************************/
 
 header {
     background-color: #0b132b;
@@ -22,6 +200,7 @@ header {
 /* ######## LOGO ######## */
 .div-logo {
     display: inline-block;
+    height: 100%;
 }
 
 #logo {
@@ -30,6 +209,7 @@ header {
     height: 9.9vw;
     min-height: 75px;
     min-width: 75px;
+    transform: translateY(-20px);
 }
 
 /* ######## FIN LOGO ######## */
@@ -375,259 +555,6 @@ nav .submenu .hijos li a {
     }
 }
 /* ######## FIN NAV ######## */
-
-/* ######## CARROUSEL ######## */
-.slider-frame {
-    width: 100%;
-    height: auto;
-    margin: 0px auto 0;
-    /*top , izq-der , bottom*/
-    overflow: hidden;
-    /* ocultar lo que quede afuera */
-}
-
-.slider-frame ul {
-    display: flex;
-    /* Para que las img queden una al lado de otra */
-    padding: 0;
-    width: 400%;
-    /* Porque quiero que cada imagen equivalga a 100% (4 imágenes) */
-
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-    width: 100%;
-    list-style: none;
-}
-
-.slider-frame img {
-    width: 100%;
-}
-
-@keyframes slide {
-
-    /* Establece como se iran reproduciendo las imágenes */
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
-
-    /*Establece el porcentaje de tiempo que se verá la 1er imagen*/
-
-    25% {
-        margin-left: -100%;
-    }
-
-    /*Dejo un margen de 5% para que la siguiente imagen no se reproduzca inmediatamente*/
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    /*Cada imagen tiene un porcentaje de 100%, y se le indica en QUE porcentaje pasar a la siguiente imagen*/
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -300%;
-    }
-}
-
-/* ######## FIN CARROUSEL ######## */
-
-/* ######## FRASE ######## */
-
-/* Para contenedor con estilo */
-.module-border-wrap {
-    width: 100%;
-    position: relative;
-    background: linear-gradient(to right, rgb(10, 0, 68), rgb(207, 192, 255));
-    padding: 3px;
-    margin-top: -6px;
-}
-
-.module {
-    background: #222;
-    color: white;
-    padding: 2rem;
-}
-
-/*Para efecto de tipado*/
-#typedtext {
-    font-family: 'Special Elite', cursive;
-    font-size: 2vw;
-    margin: 10px 50px;
-    letter-spacing: 6px;
-    font-weight: bold;
-}
-
-/* ######## FIN FRASE ######## */
-
-/* ######## NOTICIAS ######## */
-
-.post-list {
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 15px;
-    background-color: rgba(187, 240, 255, 0.452);
-}
-
-@media only screen and (min-height: 770px) {
-    .post-list {
-    min-height: 0;
-    }
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-gap: 20px;
-    max-width: 90%;
-    margin: auto;
-}
-
-.post-img-1 {
-    background: url(../Imagenes/noticia1.jpg);
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    /* Hace que se tome el elemento en sí*/
-    background-position: center;
-    transition: 0.2s;
-}
-
-.post-img-2 {
-    background: url(../Imagenes/noticia2.jpg);
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    /* Hace que se tome el elemento en sí*/
-    background-position: center;
-    transition: 0.2s;
-}
-
-.post-img-3 {
-    background: url(../Imagenes/noticia3.jpg);
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    /* Hace que se tome el elemento en sí*/
-    background-position: center;
-    transition: 0.2s;
-}
-
-.post-img-4 {
-    background: url(../Imagenes/noticia4.jpg);
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    /* Hace que se tome el elemento en sí*/
-    background-position: center;
-    transition: 0.2s;
-}
-
-.post {
-    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.1);
-    /*Sombra detras del post*/
-    overflow: hidden;
-    /*Para que cuando se expanda la imagen, no sobresalga del contenedor*/
-    transition: 0.2s;
-}
-
-.post .post-body {
-    height: 100%;
-}
-
-.post:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, 0.15);
-}
-
-.post-header {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    cursor: pointer;
-    /*Para que aparezca la mano al pasar por encima el puntero*/
-}
-
-.post:hover .post-img-1,
-.post:hover .post-img-2,
-.post:hover .post-img-3,
-.post:hover .post-img-4 {
-    transform: scale(1.1);
-}
-
-.post-body {
-    padding: 15px;
-    padding-bottom: 40px;
-    text-align: center;
-    background-color: rgba(183, 255, 255, 0.548);
-}
-
-.post-body span {
-    display: inline-block;
-    color: rgb(74, 74, 74);
-    margin-bottom: 10px;
-}
-
-.post-body h2 {
-    margin-bottom: 15px;
-}
-
-.post-body p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.post-body .post-link {
-    display: block;
-    text-decoration: none;
-    /*Para que no esté subrayado*/
-    padding: 10px;
-    background: #2b6ebb;
-    color: #fff;
-    width: 50%;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.1);
-    transition: 0.2s;
-}
-
-.post-body .post-link:hover {
-    background: #3378c7;
-    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-}
-
-/* Para que sea responsivo */
-@media (max-width: 1060px) {
-    .content {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .content {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ######## FIN NOTICIAS ######## */
 
 /* ######## FOOTER ######## */
 
