@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estiloformulario.css">
+    
+</head>
+
+<body>
+    <form action="registrar.php" method="post" class="form-register" onsubmit="return validar();">
+        <h2>Contacto</h2>
+        <div clas="contenedor-inputs">
+        <input type="text" id="nombre" name="Nombre" placeholder="Nombre y Apellido" class="input-100" required>
+        <input type="email" id="correo" name="correo" placeholder="Correo" class="input-100" required>
+        <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-10" required>
+        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+        <input type="button" value="ENVIAR" id="boton" class="btn-enviar"></input>
+        </div>
+    </form>
+  
+  
+    <script src="ctm.js"></script>
+</body>
+</html>
